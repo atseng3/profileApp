@@ -1,4 +1,8 @@
 ProfileApp::Application.routes.draw do
+  
+  resources :static_pages, :only => [:root]
+  root :to => "static_pages#root"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

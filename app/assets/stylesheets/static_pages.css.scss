@@ -54,11 +54,11 @@
 		.links {
 			.link {
 				display: inline-block;
-				width: 70px;
-				height: 70px;
 				&.fb {
 					background: image-url('fb.png') center no-repeat;
 					background-size: contain;
+					width: 70px;
+					height: 70px;
 				}
 				&.linkedin {
 					background: image-url('linkedin.png') center no-repeat;
@@ -68,8 +68,11 @@
 					margin: 5px;
 				}
 				&.github {
-					background: image-url('github.png') center no-repeat;
+					background: image-url('github2.png') center no-repeat;
 					background-size: contain;
+					width: 90px;
+					height: 90px;
+					margin: -10px;
 				}
 			}	
 		}	

@@ -2,24 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 @import "bootstrap";
 
-.root {
-	background: image-url('giphy.gif') center no-repeat;
-	background-size: 100%;
-	@media only screen and (min-width: 768px) {
-		height: 500px;
-	}
-	
-	@media only screen and (min-width: 581px) and (max-width : 767px) {
-		height: 400px;
-	}
+html {
+	background: image-url('giphy.gif') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+}
 
-	@media only screen and (max-width: 580px) {
-		height: 300px;
-	}
-	width: 100%;
+.root {
 	.title {
 		color: #f8f8f8;
 		font-size: 50px;

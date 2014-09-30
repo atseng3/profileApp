@@ -9,31 +9,43 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
  */
 
 @import "bootstrap";
+
+html {
+	background: none;
+}
 
 body {
 	background-color: #f8f8f8;
 	.navbar {
 		border: none;
+		.navbar-header {
+			.navbar-toggle {
+				border-color: #ddd;
+				background: #f8f8f8;
+				.icon-bar {
+					background: #333;
+				}
+			}
+			.navbar-brand {
+				color: #f8f8f8;
+			}
+		}
 		.collapse.navbar-collapse {
 			.nav.navbar-nav {
 				li {
-					display: inline-block;
 					&.active {
 						color: #666;
 						text-decoration: underline;
-						background-color: #f8f8f8;
 					}	
 					a {
 						color: #666;
-						background-color: #f8f8f8;
 					}
 					a:hover {
 						color: #666;
-						background-color: #f8f8f8;
+						background: none;
 						text-decoration: underline;
 					}
 				}

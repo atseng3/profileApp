@@ -1,6 +1,8 @@
 ProfileApp::Application.routes.draw do
   resources :users
-  resources :static_pages, :only => [:root]
+  resources :static_pages, :only => [:root, :apps]
+  
+  get '/apps' => "static_pages#apps"
   root :to => "static_pages#root"
 
   # The priority is based upon order of creation: first created -> highest priority.

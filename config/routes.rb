@@ -1,5 +1,5 @@
 ProfileApp::Application.routes.draw do
-  
+  resources :users
   resources :static_pages, :only => [:root]
   root :to => "static_pages#root"
 

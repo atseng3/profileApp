@@ -74,7 +74,12 @@
 					height: 90px;
 					margin: -10px;
 				}
-			}	
+			}
+			.link:hover {
+				transform: rotate(360deg);
+				transition-property: width,height,transform,background,font-size,opacity;
+				transition-duration: 1s,1s,1s,1s,1s,1s;
+			}		
 		}	
 	}
 }
@@ -131,5 +136,41 @@
 	}
 	.apps-selections__boxes:hover {
 		color: #999;
+	}
+	.links-container {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		.links {
+			.link {
+				display: inline-block;
+				&.fb {
+					background: image-url('fb.png') center no-repeat;
+					background-size: contain;
+					width: 70px;
+					height: 70px;
+				}
+				&.linkedin {
+					background: image-url('linkedin.png') center no-repeat;
+					background-size: contain;
+					width: 60px;
+					height: 60px;
+					margin: 5px;
+				}
+				&.github {
+					background: image-url('github2.png') center no-repeat;
+					background-size: contain;
+					width: 90px;
+					height: 90px;
+					margin: -10px;
+				}
+			}
+			.link:hover {
+				transform: rotate(360deg);
+				transition-property: width,height,transform,background,font-size,opacity;
+				transition-duration: 1s,1s,1s,1s,1s,1s;
+			}	
+		}	
 	}
 }

@@ -92,7 +92,7 @@
   top: 0;
   left: 0;
   img.bg {
-		content: image_url('giphy_newyork.gif');
+		content: image_url('giphy_newyork2.gif');
 		/* Set rules to fill background */
 		min-height: 100%;
 		min-width: 1024px;
@@ -129,13 +129,13 @@
 		margin: 20px;
 		cursor: pointer;
 		font-size: 6.8em;
-		color: #b0b0b0;
+		color: #CCC;
 		display: inline-block;
 		width: 100px;
 		height: 100px;
 	}
 	.apps-selections__boxes:hover {
-		color: #303030;
+		color: #999;
 	}
 	.links-container {
 		position: absolute;

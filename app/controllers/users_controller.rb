@@ -42,7 +42,7 @@ class UsersController < ApplicationController
             message_email.deliver
           end
                     
-          format.html { redirect_to @user, notice: 'User was successfully created.' }
+          format.html { redirect_to '/apps', notice: 'User was successfully created.' }
           format.json { render action: 'show', status: :created, location: @user }
         else
           format.html { render action: 'new' }

@@ -11,7 +11,9 @@ group :development do
   gem 'pry-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem "letter_opener"
+  gem 'letter_opener'
+  gem 'meta_request'
+  gem 'debugger'
 end
 
 # User bootstrap css
@@ -47,9 +49,6 @@ group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
-
-gem 'meta_request'
-gem 'debugger'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

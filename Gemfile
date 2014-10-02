@@ -7,7 +7,6 @@ gem 'rails', '4.0.8'
 
 # Use sqlite3 as the database for Active Record
 group :development do
-  gem 'sqlite3'
   gem 'pry-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
@@ -45,8 +44,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'pg', '0.15.1'
+
 group :production do 
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
 

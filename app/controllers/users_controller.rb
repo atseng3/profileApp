@@ -33,7 +33,7 @@ class UsersController < ApplicationController
       respond_to do |format|
         if @user.save
           # send welcome email
-          welcome_email = UserMail.welcome_email(@user)
+          welcome_email = UserMailer.welcome_email(@user)
           welcome_email.deliver
           
           # send email to myself if there is a message

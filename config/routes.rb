@@ -1,7 +1,8 @@
 ProfileApp::Application.routes.draw do
   resources :users
   resources :static_pages, :only => [:root, :apps]
-  
+  post '/send_email' => "static_pages#send_email"  
+  get '/contact' => "static_pages#contact"  
   get '/apps' => "static_pages#apps"
   root :to => "static_pages#root"
 

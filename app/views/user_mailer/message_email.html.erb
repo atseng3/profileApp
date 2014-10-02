@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>
+			Hi Albert, <%= @user.name %> just sent you a message!
+    </p>
+		<p>
+			<%= @message %>
+		</p>
+		<p>
+			Regards,<br>
+			<%= @user.name %><br>
+			Email: <%= @user.email %>
+		</p>
+  </body>
+</html>

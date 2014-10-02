@@ -11,7 +11,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  img.bg {
+  img.root__bg {
 		content: image_url('giphy.gif');
 		/* Set rules to fill background */
 		min-height: 100%;
@@ -28,12 +28,12 @@
   }
   
   @media screen and (max-width: 1024px) { /* Specific to this particular image */
-	  img.bg {
+	  img.root__bg {
 		  left: 50%;
 		  margin-left: -512px;   /* 50% */
 	  }
   }
-  .title {
+  .root__title {
 		font-size: 30px;
 		color: #f8f8f8;
 		position: absolute;
@@ -91,7 +91,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  img.bg {
+  img.apps__bg {
 		content: image_url('giphy_newyork2.gif');
 		/* Set rules to fill background */
 		min-height: 100%;
@@ -108,7 +108,7 @@
   }
   
   @media screen and (max-width: 1024px) { /* Specific to this particular image */
-	  img.bg {
+	  img.apps__bg {
 		  left: 50%;
 		  margin-left: -512px;   /* 50% */
 	  }
@@ -122,20 +122,25 @@
 		right: 0;
 		text-align: center;
 		margin: auto;
-		height: 100px;
-	}
-	.apps-selections__boxes {
-		text-decoration: none;
-		margin: 20px;
-		cursor: pointer;
-		font-size: 6.8em;
-		color: #CCC;
-		display: inline-block;
-		width: 100px;
-		height: 100px;
-	}
-	.apps-selections__boxes:hover {
-		color: #999;
+		height: 500px;
+		.apps-selections__title {
+			color: #CCC;
+			font-size: 22px;
+			font-weight: bold;
+		}
+		.apps-selections__boxes {
+			text-decoration: none;
+			margin: 20px;
+			cursor: pointer;
+			font-size: 6.8em;
+			color: #CCC;
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+		}
+		.apps-selections__boxes:hover {
+			color: #999;
+		}
 	}
 	.links-container {
 		position: absolute;
@@ -171,6 +176,98 @@
 				transition-property: width,height,transform,background,font-size,opacity;
 				transition-duration: 1s,1s,1s,1s,1s,1s;
 			}	
+		}	
+	}
+}
+
+.contact {
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  img.contact__bg {
+		content: image_url('giphy_newyork.gif');
+		/* Set rules to fill background */
+		min-height: 100%;
+		min-width: 1024px;
+	
+		/* Set up proportionate scaling */
+		width: 100%;
+		height: auto;
+
+		/* Set up positioning */
+		position: fixed;
+		top: 0;
+		left: 0;
+  }
+  
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+	  img.contact__bg {
+		  left: 50%;
+		  margin-left: -512px;   /* 50% */
+	  }
+  }
+	.contact__title {
+		color: #CCC;
+		font-size: 22px;
+		font-weight: bold;
+	}
+	.contact__form {
+		position: absolute;
+		width: 25%;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		margin: auto;
+		height: 500px;
+		.input-group {
+			width: 100%;
+			.input-group-addon-name {
+				font-size: 17px;
+			}
+			textarea {
+				width: 100%;
+			}
+		}
+	}
+	.links-container {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		.links {
+			.link {
+				display: inline-block;
+				&.fb {
+					background: image-url('fb.png') center no-repeat;
+					background-size: contain;
+					width: 70px;
+					height: 70px;
+				}
+				&.linkedin {
+					background: image-url('linkedin.png') center no-repeat;
+					background-size: contain;
+					width: 60px;
+					height: 60px;
+					margin: 5px;
+				}
+				&.github {
+					background: image-url('github2.png') center no-repeat;
+					background-size: contain;
+					width: 90px;
+					height: 90px;
+					margin: -10px;
+				}
+			}
+			.link:hover {
+				transform: rotate(360deg);
+				transition-property: width,height,transform,background,font-size,opacity;
+				transition-duration: 1s,1s,1s,1s,1s,1s;
+			}		
 		}	
 	}
 }

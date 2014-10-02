@@ -71,7 +71,7 @@ ProfileApp::Application.configure do
     port:                 587,
     domain:               'gmail.com',
     user_name:            'atseng3@gmail.com',
-    password:             'password',
+    password:             'Ji3g4y/aup3',
     authentication:       'plain',
     enable_starttls_auto: true  }
   config.action_mailer.perform_deliveries = true

@@ -70,7 +70,7 @@ ProfileApp::Application.configure do
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'albertseng.com',
-    user_name:            'albert',
+    user_name:            'albert@albertseng.com',
     password:             'password',
     authentication:       'plain',
     enable_starttls_auto: true  }

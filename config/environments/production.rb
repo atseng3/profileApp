@@ -69,9 +69,9 @@ ProfileApp::Application.configure do
   config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                 587,
-    domain:               'gmail.com',
-    user_name:            'atseng3',
-    password:             'Ji3g4y/aup3',
+    domain:               'albertseng.com',
+    user_name:            'albert',
+    password:             'password',
     authentication:       'plain',
     enable_starttls_auto: true  }
   config.action_mailer.perform_deliveries = true

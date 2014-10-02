@@ -70,8 +70,8 @@ ProfileApp::Application.configure do
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'gmail.com',
-    user_name:            'atseng3',
-    password:             'Ji3gy4/aup3',
+    user_name:            'atseng3@gmail.com',
+    password:             'password',
     authentication:       'plain',
     enable_starttls_auto: true  }
   config.action_mailer.perform_deliveries = true
